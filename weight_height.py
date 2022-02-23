@@ -13,12 +13,9 @@ weight = body_data['Weight'].tolist()
 
 body = pd.DataFrame({'몸무게':weight, '키':height})
 
-plt.scatter(body['키'], body['몸무게'])
+plt.scatter(body['키'],body['몸무게'])
 
 plt.xlabel('HEIGHT')
 plt.ylabel('WEIGHT')
 
 plt.show()
-
-
-

@@ -7,14 +7,14 @@ weight = [70,66,73,77,74,73,69,79,77,80,74,68,71,76,78,72,68,79,77,81,84,73,78,6
 
 body = pd.DataFrame({'키':height, '몸무게':weight})
 
-regression = sm.OLS.from_formula("weight~height", body).fit()
+regression = sm.OLS.from_formula("weight~height", body).fit() # 종속변수 독립변수 순서로 입력해야한다.
 
 print(regression.summary())
 
+
 x = 200
 y = -40.8238 + (0.6618*200)
+
 print(y)
 
-
 # print(body)
-
